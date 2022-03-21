@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import Firstcomponent from './components/Firstcomponent';
 
 function App() {
+  let person = [
+    {
+      id: 1,
+      name: 'Miral',
+      email: 'miral@gmail.com'
+    },
+    {
+      id: 2,
+      name: 'Ankit',
+      email: 'ankit@gmail.com'
+    },
+    {
+      id: 3,
+      name: 'Ankit',
+      email: 'ankit@gmail.com'
+    }
+  ]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+       <Firstcomponent title = "FirstApp" display = {true} person = {person}/>
+    </div>   
   );
 }
 
